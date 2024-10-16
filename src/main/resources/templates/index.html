@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odd or Even Checker</title>
+</head>
+<body>
+    <h1>Enter a Number</h1>
+    <form action="#" th:action="@{/check}" method="post">
+        <input type="text" name="number" placeholder="Enter a number">
+        <button type="submit">Check</button>
+    </form>
+
+    <p th:text="${result}"></p>
+</body>
+</html>
