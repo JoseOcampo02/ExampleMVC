@@ -17,8 +17,8 @@ public class NumberController {
             result = "Error: Please enter a number.";
             CsvLogger.logError(number, "Empty Input");
         } else if (!number.matches("\\d+")) {
-            result = "Error: Invalid input. Only numeric values are allowed.";
-            CsvLogger.logError(number, "Non-numeric Input or Special Character");
+            result = "Error: Invalid input. Only integer values are allowed.";
+            CsvLogger.logError(number, "Non-integer Input or Special Character");
         } else {
             int num = Integer.parseInt(number);
 
